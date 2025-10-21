@@ -1,5 +1,5 @@
 
-Contains some hotkeys to do automatic key/button mashing.
+Contains some hotkeys to do automatic key/button mashing.  \
 The hotkeys can be set at the top of the script.
 
 Functionalities:
