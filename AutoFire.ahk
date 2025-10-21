@@ -1,5 +1,7 @@
 #Requires AutoHotkey v1
 
+#SingleInstance Force
+
 #include <HeckerFunc>
 
 ;-------------------------------------------------------
@@ -10,7 +12,8 @@ autoFire_key := "vk1" ;Set in setAutoFireKey()
 
 ;-------------------------------------------------------
 
-Hotkey AppsKey, heldAutoFire
+;#BUG: Due to some unknown bug (probably in AutoHotkey, but not sure), holding down keys while clicks are being spammed causes lagging and gets stuck occasionally when too many of the "cursorMover" hotkeys are set [Last tested in AutoHotkey 1.1.33.02]
+; Hotkey AppsKey, heldAutoFire
 Hotkey +AppsKey, holdKeyDown
 Hotkey ^AppsKey, toggleAutoFire, T2
 Hotkey +^AppsKey, setAutoFireKey
